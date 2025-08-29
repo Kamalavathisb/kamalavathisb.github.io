@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamalavathi S Balegar | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #00adb5, #222831);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00adb5;
+      box-shadow: 0 0 20px rgba(0,173,181,0.8);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .projects, .education, .certifications, .internships {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+
+    .resume-btn {
+      display: block;
+      width: max-content;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background: #00adb5;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,173,181,0.5);
+      transition: 0.3s;
+    }
+
+    .resume-btn:hover {
+      background: #028891;
+      box-shadow: 0 6px 20px rgba(0,173,181,0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+    }
+
+    a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internship</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <img src="c:\Users\kamal\OneDrive\Desktop\KYC\1CR24MC045_KAMALAVATHI S BALEGAR_PROFILE.jpg" alt="Kamalavathi S Balegar">
+    <h1>Hello, I'm <span style="color:#00adb5;">Kamalavathi S Balegar</span></h1>
+    <p id="typing"></p>
+    <!-- Resume Download -->
+    <a href="c:\Users\kamal\OneDrive\Desktop\KYC\1CR24MC045_KAMALAVATHI S BALEGAR_UPDATED_RESUME.pdf" class="resume-btn" download>📄 Download Resume</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A motivated MCA graduate with a strong passion for technology and innovation, committed to contributing effectively to impactful projects while refining problem-solving skills. 
+       I enjoy creating unique and interactive digital experiences and seek opportunities in a fast-paced environment that fosters continuous learning and professional growth.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Languages: HTML, CSS, JavaScript, Python, Java (Basics)</li>
+      <li>Database: MySQL</li>
+      <li>Software Tools: Eclipse, VS Code, Jupyter Notebook</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card">
+        <h3>Master of Computer Applications</h3>
+        <p>CMR Institute of Technology, Bengaluru</p>
+        <p>CGPA: 8.94 (Pursuing, 2026 expected)</p>
+      </div>
+      <div class="card">
+        <h3>Bachelor of Science</h3>
+        <p>Smt. Indhira Gandhi Govt First Grade Women’s College, Sagar</p>
+        <p>CGPA: 8.64, 2024</p>
+      </div>
+      <div class="card">
+        <h3>12th - Science</h3>
+        <p>PES PU College, Shivamogga</p>
+        <p>95.83%, 2021</p>
+      </div>
+      <div class="card">
+        <h3>10th</h3>
+        <p>M G N Pai High School, Sagar</p>
+        <p>94.72%, 2019</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Cartoonify Image with Python and OpenCV</h3>
+        <p>A creative image transformation tool that converts photos into cartoon-style visuals using OpenCV, NumPy, and Flask.</p>
+      </div>
+      <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>An intelligent chatbot using NLP and Python to automate tasks, answer queries, and enhance user experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Section -->
+  <section id="internships">
+    <h2>Internship Experience</h2>
+    <div class="internships">
+      <div class="card">
+        <h3>Vijaya Technocrats Pvt Ltd</h3>
+        <p><b>Role:</b> Intern | Duration: 1 Month</p>
+        <p><b>Responsibilities:</b> Learnt and worked with Report Rectification using MSS Software.</p>
+        <p><b>Outcome:</b> Gained hands-on experience in data handling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="card">
+        <p>Certified in "Learn Java Programming - Beginner to Master" (Udemy)</p>
+      </div>
+      <div class="card">
+        <p>Certified in "Front End Web Developer" (Infosys Springboard)</p>
+      </div>
+      <div class="card">
+        <p>Certified in "Front End Development Libraries" (FreeCodeCamp)</p>
+      </div>
+      <div class="card">
+        <p>Participated in MSME Idea Hackathon 5.0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:kamalavathi.mca24@cmrit.ac.in">kamalavathi.mca24@cmrit.ac.in</a></p>
+    <p>📱 Phone: +91 6361479706</p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/kamalavathisb">linkedin.com/in/kamalavathisb</a></p>
+    <p>📍 Location: Bengaluru, Karnataka</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kamalavathi S Balegar. All rights reserved.</p>
+  </footer>
+
+  <!-- Typing Effect & Scroll Animation -->
+  <script>
+    // Typing effect
+    const text = ["MCA Student", "Aspiring Web Developer", "Tech Enthusiast", "Future Product Manager 🚀"];
+    let i = 0, j = 0;
+    const speed = 100;
+    function typeWriter() {
+      if (j < text[i].length) {
+        document.getElementById("typing").innerHTML += text[i].charAt(j);
+        j++;
+        setTimeout(typeWriter, speed);
+      } else {
+        setTimeout(() => {
+          document.getElementById("typing").innerHTML = "";
+          j = 0;
+          i = (i+1) % text.length;
+          typeWriter();
+        }, 2000);
+      }
+    }
+    typeWriter();
+
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+          section.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
